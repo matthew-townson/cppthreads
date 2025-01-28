@@ -7,6 +7,7 @@
 
 #define RUNTIMES 550
 #define LENGTH 120
+#define SPEED 20
 
 void printblock(int type) {
     switch(type) {
@@ -92,7 +93,7 @@ int main() {
                 }
             }
             printCycle(cells);
-            std::this_thread::sleep_for(std::chrono::milliseconds(50));
+            std::this_thread::sleep_for(std::chrono::milliseconds(20));
             inRange = false;
         }
     }
