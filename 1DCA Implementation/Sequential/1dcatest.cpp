@@ -2,12 +2,12 @@
 #include <chrono>
 #include <thread>
 #include <utility>
-#include <cstring>
+//#include <cstring>
 #include <string>
 
-#define RUNTIMES 550
+#define RUNTIMES 24900
 #define LENGTH 120
-#define SPEED 20
+#define SPEED 100
 
 void printblock(int type) {
     switch(type) {
@@ -93,7 +93,7 @@ int main() {
                 }
             }
             printCycle(cells);
-            std::this_thread::sleep_for(std::chrono::milliseconds(20));
+            std::this_thread::sleep_for(std::chrono::milliseconds(SPEED));
             inRange = false;
         }
     }
